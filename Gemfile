@@ -39,7 +39,7 @@ gem 'mini_magick'
 
 
 group :development, :test do
-  gem 'pry'
+  gem 'pry' # binding.pry
   gem 'awesome_rails_console'
 end
 
