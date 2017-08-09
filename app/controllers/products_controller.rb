@@ -35,5 +35,12 @@ end
 
 def destroy
   @group = Group.find(params[:id])
+  @group.destroy
+  redirect_to grous_paht
+
+private
+
+def group_params
+  params.require(:group).permit(:title, :description)
 end
 end
