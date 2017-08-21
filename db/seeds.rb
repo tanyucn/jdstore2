@@ -1,18 +1,40 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+# Initialize Admin User
+
+if User.find_by(email: "tanyumr@gmail.com").nil?
+  u = User.new
+  u.email = "tanyumr@gmail.com"           # 可以改成自己的 email
+
+  u.password = "qweqwe"                # 最少要六码
+
+  u.password_confirmation = "qweqwe"   # 最少要六码
+
+  u.is_admin = true
+  u.save
+  puts "Admin 已经建立好了，帐号为#{u.email}, 密码为#{u.password}"
+else
+  puts "Admin 已经建立过了，脚本跳过该步骤。"
+end
 
 
-u = User.new
-u.email = "tanyumr@gmail.com"           # 可以改成自己的 email
+# Initialize Product
 
-u.password = "qweqwe"                # 最少要六码
+Product.create!(title: "Mac",
+  description: "苹果笔记本",
+  price: 8800,
+  quantity: 5,
+  image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317223448&di=ed84e3f8fd0a0dab1d3a3f0a2923e8e5&imgtype=0&src=http%3A%2F%2Fimg.pconline.com.cn%2Fimages%2Fupload%2Fupc%2Ftx%2Fpiebbs%2F1403%2F14%2Fc0%2F32095429_1394797374161_1024x1024it.jpg")
+  )
 
-u.password_confirmation = "qweqwe"   # 最少要六码
+Product.create!(title: "Mac+",
+  description: "苹果笔记本",
+  price: 10000,
+  quantity: 5,
+  image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317223434&di=236c6afab1605215879f01825363adbf&imgtype=0&src=http%3A%2F%2Fdesign.knowsky.com%2Fimg%2F1%2F201305191957521213.jpg")
+  )
 
-u.is_admin = true
-u.save
+Product.create!(title: "Mac++",
+  description: "苹果笔记本",
+  price: 12800,
+  quantity: 5,
+  image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317402295&di=59f18d4ede2a3b6f2f07db1f0ce5d08d&imgtype=0&src=http%3A%2F%2Fsource.shop.busionline.com%2F201612011636-1416651367.jpg")
+  )
