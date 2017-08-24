@@ -38,7 +38,8 @@ gem 'mini_magick'
 gem 'letter_opener', group: :development
 gem 'aasm'
 gem 'acts_as_list'
-
+gem 'carrierwave-qiniu'
+gem 'qiniu-rs'
 
 
 
