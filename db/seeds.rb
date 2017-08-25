@@ -28,20 +28,20 @@ Product.create!(title: "Mac",
 Product.create!(title: "Mac+",
   description: "苹果笔记本",
   price: 10000,
-  quantity: 20,
+  quantity: 21,
   image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317223434&di=236c6afab1605215879f01825363adbf&imgtype=0&src=http%3A%2F%2Fdesign.knowsky.com%2Fimg%2F1%2F201305191957521213.jpg")
   )
 
 Product.create!(title: "Mac++",
   description: "苹果笔记本",
   price: 12800,
-  quantity: 10,
+  quantity: 12,
   image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317402295&di=59f18d4ede2a3b6f2f07db1f0ce5d08d&imgtype=0&src=http%3A%2F%2Fsource.shop.busionline.com%2F201612011636-1416651367.jpg")
   )
 
   Product.create!(title: "cherry 80",
     description: "樱桃键盘",
     price: 799,
-    quantity: 25,
+    quantity: 35,
     image: open("http://localhost:3000/uploads/product/image/13/medium_open-uri20170821-25387-1iw32xp")
     )
