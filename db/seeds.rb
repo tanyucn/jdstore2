@@ -28,7 +28,7 @@ Product.create!(title: "Mac",
 Product.create!(title: "Mac+",
   description: "苹果笔记本",
   price: 10000,
-  quantity: 11,
+  quantity: 12,
   image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317223434&di=236c6afab1605215879f01825363adbf&imgtype=0&src=http%3A%2F%2Fdesign.knowsky.com%2Fimg%2F1%2F201305191957521213.jpg")
   )
 
