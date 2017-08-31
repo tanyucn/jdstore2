@@ -18,30 +18,30 @@ end
 
 # Initialize Product
 
-Product.create!(title: "Mac",
-  description: "苹果笔记本",
-  price: 8800,
-  quantity: 26,
-  image: open("http://image.tianjimedia.com/uploadImages/2016/339/47/W3K26FNL92DA.jpg")
-  )
-
-Product.create!(title: "Mac+",
-  description: "苹果笔记本",
-  price: 10000,
-  quantity: 12,
-  image: open("http://images.busionline.com/goods/storeid-18241-55fa9ebd8167855fa9ebd816c11442487997.JoteXXXXXbtXXXXXXXXXXXX_%21%21111686382.jpg")
-  )
-
-Product.create!(title: "Mac++",
-  description: "苹果笔记本",
-  price: 12800,
-  quantity: 6,
-  image: open("http://a.hiphotos.baidu.com/zhidao/pic/item/9a504fc2d5628535351b57c997ef76c6a6ef635b.jpg")
-  )
-
-  Product.create!(title: "cherry 80",
-    description: "樱桃键盘",
-    price: 799,
-    quantity: 15,
-    image: open("http://localhost:3000/uploads/product/image/13/medium_open-uri20170821-25387-1iw32xp")
-    )
+# Product.create!(title: "Mac",
+#   description: "苹果笔记本",
+#   price: 8800,
+#   quantity: 26,
+#   image: open("https://img14.360buyimg.com/n0/jfs/t3505/105/1066513479/244034/3fb987ba/581c01c5Necdb72c5.jpg")
+#   )
+#
+# Product.create!(title: "Mac+",
+#   description: "苹果笔记本",
+#   price: 10000,
+#   quantity: 12,
+#   image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317223434&di=236c6afab1605215879f01825363adbf&imgtype=0&src=http%3A%2F%2Fdesign.knowsky.com%2Fimg%2F1%2F201305191957521213.jpg")
+#   )
+#
+# Product.create!(title: "Mac++",
+#   description: "苹果笔记本",
+#   price: 12800,
+#   quantity: 5,
+#   image: open("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1503317402295&di=59f18d4ede2a3b6f2f07db1f0ce5d08d&imgtype=0&src=http%3A%2F%2Fsource.shop.busionline.com%2F201612011636-1416651367.jpg")
+#   )
+#
+# Product.create!(title: "cherry 80",
+#   description: "樱桃键盘",
+#   price: 799,
+#   quantity: 15,
+#   image: open("http://localhost:3000/uploads/product/image/13/medium_open-uri20170821-25387-1iw32xp")
+#   )
