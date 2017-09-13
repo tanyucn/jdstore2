@@ -22,6 +22,7 @@ class OrdersController < ApplicationController
     else
       render 'carts/checkout'
     end
+    
   end
 
   def show
@@ -51,7 +52,7 @@ class OrdersController < ApplicationController
       flash[:notice] = "已提交申请"
       redirect_to :back
     end
-    
+
 
   private
 
