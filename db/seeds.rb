@@ -45,11 +45,6 @@ end
 #   quantity: 15,
 #   image: open("http://localhost:3000/uploads/product/image/13/medium_open-uri20170821-25387-1iw32xp")
 #   )
-  def seed_image(notebook)
-    File.open(File.join(Rails.root, "/app/assets/images/#{notebook}.jpg"))
-  end
-
-  Product.create([title:"笔记本",description:"一本",quantity:200,price:10,image:seed_image('notebook')])
 
 def seed_image1(a1)
   File.open(File.join(Rails.root,"/public/images/#{a1}.jpg"))
