@@ -41,6 +41,8 @@ gem 'acts_as_list'
 gem 'carrierwave-qiniu'
 gem 'qiniu-rs'
 gem 'figaro'
+gem 'rucaptcha'
+gem 'dalli'
 
 
 
